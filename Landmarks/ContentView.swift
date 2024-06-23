@@ -2,9 +2,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Turtle Rock")
-            .font(.title)
-            .foregroundStyle(.green) // Tutorial asks for foregroundColor, but it's deprecated
+        VStack(alignment: .leading) {
+            Text("Turtle Rock")
+                .font(.title)
+
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 
