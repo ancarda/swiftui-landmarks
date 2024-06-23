@@ -1,7 +1,7 @@
 import CoreLocation
 import SwiftUI
 
-struct Landmark: Codable, Hashable {
+struct Landmark: Codable, Hashable, Identifiable {
     struct Coordinates: Hashable, Codable {
         let latitude: Double
         let longitude: Double
