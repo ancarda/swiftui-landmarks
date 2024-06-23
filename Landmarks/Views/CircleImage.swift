@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtlerock")
+        landmarks[0].image
             .clipShape(.circle) // Why does the tutorial say to use Circle()?
             .overlay {
                 Circle().stroke(.white, lineWidth: 4)
